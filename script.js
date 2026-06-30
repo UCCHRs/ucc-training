@@ -1,0 +1,1 @@
+const v=document.getElementById('v');v.addEventListener('ended',()=>{document.getElementById('lock').style.display='none';document.getElementById('f').style.display='block';});
