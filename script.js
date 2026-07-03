@@ -1,1 +1,1 @@
-let player;function onYouTubeIframeAPIReady(){player=new YT.Player("player",{videoId:"KyrTH8oSzkI",playerVars:{rel:0},events:{onStateChange:e=>{if(e.data===YT.PlayerState.ENDED){lock.style.display="none";f.style.display="block";}}}})}
+const video=document.getElementById("trainingVideo");const lock=document.getElementById("lock");const f=document.getElementById("f");video.addEventListener("ended",()=>{lock.style.display="none";f.style.display="block";f.scrollIntoView({behavior:"smooth"});});
