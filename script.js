@@ -1,1 +1,1 @@
-const v=document.getElementById('v');v.addEventListener('ended',()=>{document.getElementById('lock').style.display='none';document.getElementById('f').style.display='block';});
+let player;function onYouTubeIframeAPIReady(){player=new YT.Player("player",{videoId:"KyrTH8oSzkI",playerVars:{rel:0},events:{onStateChange:e=>{if(e.data===YT.PlayerState.ENDED){lock.style.display="none";f.style.display="block";}}}})}
